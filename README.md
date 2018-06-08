@@ -1,11 +1,37 @@
-# ANLY699Project
-Impact of Adoption of Electric Transportation on Green House Gases Emission:
-A master's thesis project on global warming
-Ying Zhang
-Analytics Department, Harrisburg University of Science and Technology
-Harrisburg, PA
+## Welcome to GitHub Pages
 
-Abstract
-The multi-dimensional concerns regarding global warming are alarming. Climate is changing rapidly, and it is likely for the worse—affecting everything from agribusiness to human health. It is doing so at an unprecedented rate, and mounting evidence points to increased levels of atmospheric carbon dioxide as the primarily the culprit. Indeed, scientific models suggest that carbon dioxide as the byproduct of human activity, visualized via anthropogenic modelling (i.e., environmental pollution derived from human activity), is vital to solving global warming. This thesis will firstly introduce key analyses that researchers have presented as the “smoking gun” in blaming carbon, and secondly present a new model to address issues regarding a specific carbon producer, namely fossil-fuel-consuming vehicles; to this end, the pros and cons of so-called plug-in electric vehicles, or PEVs, as a critical part of greenhouse gas (GHG) reduction strategies will be considered.
+You can use the [editor on GitHub](https://github.com/carilyn1031/ANLY699/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Keywords: Global warming, Greenhouse gases, Carbon dioxide emission, Electric transportation, Plug-in electric vehicles (PEVs)
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/carilyn1031/ANLY699/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
