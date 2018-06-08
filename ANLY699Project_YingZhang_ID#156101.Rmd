@@ -7,22 +7,19 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+```{r echo=FALSE}
+library(ggplot2)
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```
+## Impact of Adoption of Electric Transportation on Green House Gases Emission: A master's thesis project on global warming
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
+The multi-dimensional concerns regarding global warming are alarming. Climate is changing rapidly, and it is likely for the worse—affecting everything from agribusiness to human health. It is doing so at an unprecedented rate, and mounting evidence points to increased levels of atmospheric carbon dioxide as the primarily the culprit. Indeed, scientific models suggest that carbon dioxide as the byproduct of human activity, visualized via anthropogenic modelling (i.e., environmental pollution derived from human activity), is vital to solving global warming. This thesis will firstly introduce key analyses that researchers have presented as the “smoking gun” in blaming carbon, and secondly present a new model to address issues regarding a specific carbon producer, namely fossil-fuel-consuming vehicles; to this end, the pros and cons of so-called plug-in electric vehicles, or PEVs, as a critical part of greenhouse gas (GHG) reduction strategies will be considered.
+
+```{r}
+co2emission <- read.csv("~/Downloads/ANLY699FP/ANLY699Project/Data/co2emission.csv")
+emission.plot <- ggplot(co2emission,aes(year,emission))+geom_point()
+emission.plot
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
