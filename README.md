@@ -18,8 +18,9 @@ https://carilyn1031.github.io/ANLY699Project/
 
 ### Code example in R
 ```{r}
+library(ggplot2)
 co2emission <- read.csv("~/Downloads/ANLY699FP/ANLY699Project/Data/co2emission.csv")
 emission.plot <- ggplot(co2emission,aes(year,emission))+geom_point()
 emission.plot
 ```
-
+For result graph, please see github page, folder "Figures". 
