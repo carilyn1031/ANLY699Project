@@ -16,5 +16,10 @@ https://github.com/carilyn1031/ANLY699Project.git
 2. github web site 
 https://carilyn1031.github.io/ANLY699Project/ 
 
-
+### Code example in R
+```{r}
+co2emission <- read.csv("~/Downloads/ANLY699FP/ANLY699Project/Data/co2emission.csv")
+emission.plot <- ggplot(co2emission,aes(year,emission))+geom_point()
+emission.plot
+```
 
