@@ -19,10 +19,20 @@ The multi-dimensional concerns regarding global warming are alarming. Climate is
 ```{r}
 #Graph CO2 Concentration from 800K years prior to present
 compositeCO2record <- read.csv("/Users/YCZhang/Downloads/ANLY699FP/ANLY699Project/Data/CompositeCO2record.csv")
-co2Concentration.plot <- ggplot(compositeCO2record,aes(Age.yrBP,CO2.ppmv))+geom_line()
+co2Concentration.plot <- ggplot(compositeCO2record,aes(Age.yrBP,CO2.ppmv))+geom_line()+labs(title="CO2 Concentration 0-800 kyr Before Present",x="Year before present", y="CO2 concentration (ppmv)")
 
 co2Concentration.plot
 ```
+
+```{r}
+##Graph CO2 Concentration 1980-2017
+CD1980to2017 <-read.csv("/Users/YCZhang/Downloads/ANLY699FP/ANLY699Project/Data/CO2_1980-2017.csv")
+
+CD1980to2017.plot <- ggplot(CD1980to2017, aes(year,mean)) + geom_line()+ labs(title="CO2 Concentration 1980-2017",x="Year", y="CO2 concentration (ppmv)")
+CD1980to2017.plot
+
+```
+
 
 ```{r}
 co2emission <- read.csv("~/Downloads/ANLY699FP/ANLY699Project/Data/co2emission.csv")
