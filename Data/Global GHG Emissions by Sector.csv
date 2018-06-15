@@ -1,0 +1,31 @@
+﻿Year,Sector,Emission
+1990,Energy,22984.82102
+1995,Energy,23726.80578
+2000,Energy,25615.00732
+2005,Energy,29537.69391
+2010,Energy,32677.83564
+1990,International transport,618.69
+1995,International transport,709.22
+2000,International transport,836.44
+2005,International transport,973.43
+2010,International transport,1096.4
+1990,Agriculture,5621.7899
+1995,Agriculture,5501.83134
+2000,Agriculture,5423.769715
+2005,Agriculture,5798.450564
+2010,Agriculture,5998.801407
+1990,Industrial processes,1125.629523
+1995,Industrial processes,1299.907596
+2000,Industrial processes,1480.669957
+2005,Industrial processes,1981.660095
+2010,Industrial processes,2521.79857
+1990,Waste,1148.256669
+1995,Waste,1226.137275
+2000,Waste,1299.417512
+2005,Waste,1378.810375
+2010,Waste,1471.362711
+1990,Land-use change and forestry,2595.79721
+1995,Land-use change and forestry,2569.3687
+2000,Land-use change and forestry,2590.18542
+2005,Land-use change and forestry,3060.22361
+2010,Land-use change and forestry,2096.76915

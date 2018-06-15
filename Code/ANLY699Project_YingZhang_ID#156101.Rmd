@@ -43,7 +43,19 @@ emission.plot
 ```{r}
 GHG_EmissionByGas <-read.csv("~/Downloads/ANLY699FP/ANLY699Project/Data/GHG Emission by Gas.csv")
 
-GHGEmission.plot <- ggplot(GHG_EmissionByGas,aes(x=Year,y=Emission, fill=Gas))+geom_bar(position="stack", stat = "identity")+labs(title="GHG Emission by Gas 1960-2014",x="Year",y="CO2 Emission")
+GHGEmission.plot <- ggplot(GHG_EmissionByGas,aes(x=Year,y=Emission, fill=Gas))+geom_bar(position="stack", stat = "identity")+labs(title="Global GHG Emission by Gas 1960-2014",x="Year",y="CO2 Emission")
 GHGEmission.plot
 
+```
+
+```{r}
+GHG_EmissionBySector <-read.csv("~/Downloads/ANLY699FP/ANLY699Project/Data/Global GHG Emissions by Sector.csv")
+
+GHGEmissionBySector.plot <- ggplot(GHG_EmissionBySector,aes(x=Year,y=Emission, fill=Sector))+geom_bar(position="stack", stat = "identity")+labs(title="Global GHG Emission by Sector 1990-2010",x="Year",y="CO2 Emission")
+
+GHGEmissionBySector.plot
+```
+
+```{r}
+library(ggpubr)
 ```
