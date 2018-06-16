@@ -57,5 +57,9 @@ GHGEmissionBySector.plot
 ```
 
 ```{r}
-library(ggpubr)
+#Calculate the correlation between GHG and earth surface temperature based on the data from 1990 to 2014
+CO2TempCorr <- read.csv("~/Downloads/ANLY699FP/ANLY699Project/Data/GHGTempCorrelation.csv")
+matCO2Temp <- cor(CO2TempCorr)
+corrplot(matCO2Temp)
+
 ```
