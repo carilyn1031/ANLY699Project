@@ -9,6 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r echo=FALSE}
 library(ggplot2)
+library(corrplot)
 
 ```
 ## Impact of Adoption of Electric Transportation on Green House Gases Emission: A master's thesis project on global warming
@@ -62,6 +63,10 @@ CO2TempCorr <- read.csv("~/Downloads/ANLY699FP/ANLY699Project/Data/GHGTempCorrel
 matCO2Temp <- cor(CO2TempCorr)
 corrplot(matCO2Temp)
 
+cor(SeaLevel)
+S1 <- lm(SeaLevel_mm ~ Time, data = SeaLevel)
+summary(S1)
+
 ```
 
 ```{r}
@@ -70,3 +75,19 @@ matCO2Surface <- cor(CO2SurfaceCorr)
 corrplot(matCO2Surface)
 
 ```
+
+```{r}
+#Sea level linear regression
+SeaLevel <-read.csv("~/Downloads/ANLY699FP/ANLY699Project/Data/MonthlySeaLevel.csv")
+SeaLevel.plot <- ggplot(SeaLevel,aes(x=Time,y=SeaLevel_mm))+geom_point()
+SeaLevel.plot
+
+plot(SeaLevel_mm ~ Time, data = SeaLevel)
+S1 <- lm(SeaLevel_mm ~ Time, data = SeaLevel)
+abline(S1, col="red", lty=2, lwd=2) + title ("Sea Level Over Time Linear Regression")
+predict(S1,data.frame("Time"= 2040))
+
+
+
+```
+
