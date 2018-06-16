@@ -63,3 +63,10 @@ matCO2Temp <- cor(CO2TempCorr)
 corrplot(matCO2Temp)
 
 ```
+
+```{r}
+CO2SurfaceCorr <- read.csv("~/Downloads/ANLY699FP/ANLY699Project/Data/SurfaceCO2Corr.csv")
+matCO2Surface <- cor(CO2SurfaceCorr)
+corrplot(matCO2Surface)
+
+```
