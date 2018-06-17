@@ -20,7 +20,7 @@ The multi-dimensional concerns regarding global warming are alarming. Climate is
 ```{r}
 #Graph CO2 Concentration from 800K years prior to present
 compositeCO2record <- read.csv("/Users/YCZhang/Downloads/ANLY699FP/ANLY699Project/Data/CompositeCO2record.csv")
-co2Concentration.plot <- ggplot(compositeCO2record,aes(Age.yrBP,CO2.ppmv))+geom_line()+labs(title="CO2 Concentration 0-800 kyr Before Present",x="Year before present", y="CO2 concentration (ppmv)")
+co2Concentration.plot <- ggplot(compositeCO2record,aes(Age.yrBP,CO2.ppmv))+geom_line()+labs(title="CO2 Concentration 800,000 Year Before Present",x="Year before present", y="CO2 concentration (ppm)")
 
 co2Concentration.plot
 ```
@@ -29,7 +29,7 @@ co2Concentration.plot
 ##Graph CO2 Concentration 1980-2017
 CD1980to2017 <-read.csv("/Users/YCZhang/Downloads/ANLY699FP/ANLY699Project/Data/CO2_1980-2017.csv")
 
-CD1980to2017.plot <- ggplot(CD1980to2017, aes(year,mean)) + geom_line()+ labs(title="CO2 Concentration 1980-2017",x="Year", y="CO2 concentration (ppmv)")
+CD1980to2017.plot <- ggplot(CD1980to2017, aes(year,mean)) + geom_line()+ labs(title="CO2 Concentration 1980-2017",x="Year", y="CO2 concentration (ppm)")
 CD1980to2017.plot
 
 ```
@@ -87,7 +87,13 @@ S1 <- lm(SeaLevel_mm ~ Time, data = SeaLevel)
 abline(S1, col="red", lty=2, lwd=2) + title ("Sea Level Over Time Linear Regression")
 predict(S1,data.frame("Time"= 2040))
 
-
-
 ```
 
+```{r}
+#Linear regression of year and CO2 concentration
+plot(mean ~ year, data = CD1980to2017)
+C1 <- lm(mean ~ year, data = CD1980to2017)
+abline(C1, col="red", lty=2, lwd=2) + title ("CO2 Concentration Linear Regression")
+predict(C1,data.frame("year"= 2040))
+
+```
